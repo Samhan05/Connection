@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQ with Enhancements</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #6e7dff, #3a47d5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #333;
+            text-align: center;
+        }
+
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .faq-card {
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .faq-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #003366;
+            margin-bottom: 15px;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .explanation, .enhance-box {
+            display: none;
+            padding: 15px 20px;
+            background: #ffffff;
+            border-left: 5px solid;
+            font-size: 1rem;
+            color: #333;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        .explanation {
+            border-left-color: #003366;
+            background: #f0f4ff;
+            margin-bottom: 10px;
+        }
+
+        .enhance-box {
+            border-left-color: #007d1c;
+            background: #eafbf1;
+        }
+
+        .enhance-box ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        .enhance-box ul li {
+            list-style: disc;
+            margin-bottom: 5px;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-list">
+
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(0)">
+                    The team I'm on helps me feel included at work. 
+                </div>
+                <div class="explanation" id="explanation0">
+                    Do you feel valued, respected and accepted?
+Do you feel included and part of your team?
+- Positive feedback means that your team is doing a great job of making everyone feel accepted, respected and part of something bigger.
+- Negative feedback  may refer to some underlying issues about how the group comes together, its culture, or how it deals with diversity and integration.
+Addressing these feelings is key to building a supportive, connected and productive team.
+                </div>
+    
+                <div class="enhance-box" id="enhance0">
+                    <ul><li>1 - Engage in team activities:</li><li>- Join team connects and try to speak up during these connects, Share ideas and ask questuions.This shows your engagement and willingness to contribute.</li><li>- Participate in events that are organized by your teammates or organization, as this will create a friendly relationship with colleques.</li><li>2- Build relationships with colleagues</li><li>- Starting a conversation: Start a conversation with your co-workers. Start with small talk or ask about their interests to gain a common ground. Building relationships can help you feel more connected to your team.</li><li>- Find a mentor or friend: Having a mentor or work friend gives you guidance, support and a sense of belonging. They can help you navigate the workplace culture and introduce you to more people.</li><li>3-  Look for feedback and show a willingness to learn</li><li>- Ask for feedback: Ask for constructive feedback from your manager or peers. This means you are committed to growth and value their investment. It can also open up more opportunities for engagement and collaboration.</li><li>Be open to learning: Show interest in learning new things or taking on new challenges. This allows you to be more involved in projects and groups, expands your network and makes you feel more integrated.</li><li>4-  Contribute to team success</li><li>- Volunteer: Offer to do tasks or projects that align with your skills or interests. Being involved in meaningful work helps you feel more connected to your team and organization.</li><li>- Share your knowledge: Don’t be shy about sharing your knowledge and skills. Supporting colleagues can foster a sense of community and mutual respect..</li><li>5- Communicate your needs</li><li>- Express your desire to get involved: If you’re feeling left out, consider talking to your manager or team about wanting to get more involved. Be proactive in looking for opportunities to contribute.</li><li>- Be clear about your interests: Let your team know what you’re passionate about and where you want to help. This makes it easier for others to connect you to related services or activities.</li><li>6- Be respectful and include others</li><li>- Support Colleagues: Show interest in colleagues’ work and offer support when needed. Being a team player and showing empathy helps build strong and healthy relationships.</li><li>- Practice Active Listening: When others are speaking, listen actively and engage their thoughts. This shows that you value their input and are personally committed to creating an inclusive environment.</li><li>7- Maintain a Positive Mindset</li><li>- Focus on what you can control: Focus on your actions and attitudes rather than things that are out of your control. Having a positive attitude beforehand can help you feel more empowered and included.</li><li>- Celebrate small wins:  Acknowledge and celebrate your contributions and successes, no matter how small. This builds your confidence and reinforces your sense of belonging.</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(1)">
+                    The team I'm on makes decisions quickly.
+                </div>
+                <div class="explanation" id="explanation1">
+                    Are you able to make decisions quickly due to “effective communication”, trust between your teammates, and a clear understanding of your goals and KPI’s?
+Is the process clear enough to help you make right decisions?
+Do you understand your SLA’s?
+This question examines the efficiency of a team’s decision-making process.
+- Positive feedback means the team is able to make timely decisions, resulting in higher productivity and a flexible work environment.
+- Negative feedback may reflect issues such as unclear decision-making authority, or other barriers that may slow down team performance and responsiveness.
+Addressing these issues can help streamlining processes and improve overall team effectiveness.
+                </div>
+    
+                <div class="enhance-box" id="enhance1">
+                    <ul><li>1- Prepare thoroughly before discussions:</li><li>- Do your research: Come to a prepared meeting or discussion with relevant data, insights, or examples that can inform the decision-making process. This helps the team make faster decisions and gain more knowledge.</li><li>- Anticipate questions and concerns: Consider potential questions or concerns during the decision</li><li>-making process and prepare answers or solutions in advance. This can prevent delays.</li><li>2- Facilitate clear communication:</li><li>- Be Direct and to the Point: When contributing to discussions, focus on providing clear and concise input.</li><li>- Avoid long-winded explanations and stick to the most relevant points to help the team reach a decision faster.</li><li>- Support and Streamline the Decision-Making Process</li><li>3- Provide relevant information quickly:</li><li>When asked to provide data or insights, do so immediately. This helps keep the decision-making process robust and prevents delays.</li><li>4- Assist in Gathering Input from Others:</li><li>Help gather feedback or ideas from other team members, especially those who may not be the most vocal. This ensures a good look without slowing down the process.</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(2)">
+                    What is the biggest blocker to delivering for your customers?
+                </div>
+                <div class="explanation" id="explanation2">
+                    What is the most important barrier preventing you from meeting your customers' needs?
+What hinders customer satisfaction and how can these issues be addressed?
+This question aims to help management identify the key barriers the employee face in delivering value to customers. Common challenges can include inefficient processes, poor resources, or unclear customer requirements.
+-Positive feedback means everything is running smoothly, with the needed resources, clear communication, well-trained staff, quick decision-making, and effective technology.
+- Negative feedback can indicate problems such as operational inefficiencies, weak communications, the need for more trainings, or technical issues that make it difficult to provide quality service.
+Addressing these issues and understanding these barriers is important for an organization to implement targeted improvements and ultimately increase customer satisfaction.
+                </div>
+    
+                <div class="enhance-box" id="enhance2">
+                    <ul><li>Identifying and addressing blockers to delivery for customers is essential for improving service and satisfaction.</li><li>You can play a key role in addressing these blockers by proactively identifying the problem.</li><li>Suggesting improvements and collaborating with your team, and you can do this by following the below:</li><li>- identify the common blockers that might cause issues in delivering for customers, such as communication gaps, Inefficient Processes, Resource Constraints, or Unclear Prioritization.</li><li>You can Identify these blockers by using the below methods:</li><li>1- Ask questions:</li><li>Engage with your team and ask what they find most challenging when delivering to customers.</li><li>2- Analyze patterns:</li><li>Look for recurring issues in your workflow or customer feedback that indicate common blockers.</li><li>3- Ask for feedback:</li><li>Ask for feedback from customers or operation team members about where they are experiencing delays or inefficiencies.</li><li>By identifying these blockers and taking proactive steps to address them. You'll be able to increase your team's ability to deliver to customers. whether by improving communication, Improve processes, optimize resources, better prioritization or speeding up feedback loops,  Your contributions can make a huge difference in removing barriers and driving success.</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(3)">
+                    I can see how my work contributes to innovation in my organization.	
+                </div>
+                <div class="explanation" id="explanation3">
+                    Do you understand how your work contributes to the broader goals of our organization, especially in innovation?
+- Positive feedback means seeing that there is a clear connection between your efforts and other organizational initiatives, which can increase your job satisfaction and motivation.
+- Negative feedback  if you don't see this connection, it might highlight a need for better communication from management about how individual roles support the organization's innovative and overall mission.
+By Addressing this question, the organization can determine if the team has the guidance they need and, if necessary, take steps to improve goal setting processes, leading to more effective and cohesive teamwork.
+                </div>
+    
+                <div class="enhance-box" id="enhance3">
+                    <ul><li>To enhance your contribution to innovation as an associate, you can follow the below:</li><li>1- Suggest new ideas:</li><li>Regularly suggest improvements or new approaches in meetings or through idea-sharing platforms within your organization.</li><li>2- Collaborate Across Teams:</li><li>Engage with colleagues from different teams to gain diverse perspectives and insights, which can spark innovative solutions.</li><li>3- Stay Informed:</li><li>Keep updated with the new tools that are used, new updates that are related to your tasks, and share them with the team.</li><li>4- Seek Feedback:</li><li>After implementing ideas, ask for feedback to refine and improve them, Promote a culture of continuous innovation.</li><li>By taking these steps, you can play a proactive role in driving innovation within your organization.</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(4)">
+                    My team has well-defined goals.		
+                </div>
+                <div class="explanation" id="explanation4">
+                    Are you clear about the goals and objectives you're working to achieve? 
+Well-defined goals help ensure everyone is on the same page and working effectively to achieve common results.
+- Positive feedback means there is good communication and clear direction from management.
+-Negative feedback mean that there is a need for careful goal setting and effective communication of expectations and priorities.
+This question is intended to let everyone know what they need to work on. Clearly defining goals helps ensure everyone is heading in the same direction and working well together. 
+If some people are unclear about their goals, this can point to areas where communication needs to be better or where goals can be set more effectively. Understanding this helps the team stay focused and productive.
+                </div>
+    
+                <div class="enhance-box" id="enhance4">
+                    <ul><li>This is how to enhance well-defined goals:</li><li>1- Review goals regularly:</li><li>Encourage the team to review goals to ensure they remain relevant and aligned with organizational objectives.</li><li>2- Clarify and communicate:</li><li>Break down goals into specific, actionable tasks, and make sure everyone understands their role in achieving these goals.</li><li>3- Track progress:</li><li>Suggest using tools or regular check-ins to track progress. This makes it easy to follow, to stay on track and to get adjusted as needed.</li><li>4- Promote Accountability:</li><li>Create a culture where team members take ownership of their task, which helps to achieve the overall goals.</li><li>By following these steps, you will help maintain clarity and focus on achieving the team’s objectives.</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(5)">
+                    I can achieve my career goals at Amazon.	
+                </div>
+                <div class="explanation" id="explanation5">
+                    Do you believe your career aspirations can be achieved within Amazon?
+- Positive feedback indicates that employees feel that the company provides adequate opportunities for employee growth, development and professional development.
+- Negative feedback refers to factors such as lack of business plans, inadequate support for improvement, or disconnect between what the company offers and what employees want to achieve.
+Addressing these issues is critical to retaining skilled workers and keeping employees motivated.
+                </div>
+    
+                <div class="enhance-box" id="enhance5">
+                    <ul><li>To enhance your ability to achieve career goals at Amazon:</li><li>1- Set clear, measurable goals:</li><li>Set and update your career goals regularly to align with Amazon's opportunities and growth path.</li><li>2- Find Mentoring and Networking:</li><li>Connect with mentors and peers who can offer guidance, share insights and help navigate your career path within the company.</li><li>3- Take advantage of learning opportunities:</li><li>Take advantage of Amazon's training programs, workshops, and resources to build the skills and knowledge you need to advance your career..</li><li>4- Actively ask for feedback:</li><li>Regularly ask for constructive feedback from your manager and co-workers to understand your strengths and areas for improvement, iwill help you to stay on track with your career aspirations</li><li>By following these steps, you will better position yourself to achieve your career goals at Amazon.</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(6)">
+                    How often do you feel valued at work?	
+                </div>
+                <div class="explanation" id="explanation6">
+                    This question asks how often employees feel appreciated and recognized for their contributions.
+Feeling valued at work is important for employee morale, job satisfaction and job retention.
+- Positive feedback indicate a supportive and appreciative workplace culture.
+- Negative feedback refers to issues related to recognition practices, employee relations, or company culture in general and may require actions to improve the recognition and identification of employee efforts
+                </div>
+    
+                <div class="enhance-box" id="enhance6">
+                    <ul><li>To enhance how often you feel valued at work:</li><li>1- Acknowledge your contributions:</li><li>Take note of your achievements and share them with your team and manager when appropriate. It emphasizes the impact of your work.</li><li>2- Ask for feedback:</li><li>Ask for regular feedback from your manager and co-workers to understand how your work is viewed and where you excel.</li><li>3- Engage Actively:</li><li>Attend meetings, share ideas, and volunteer for projects to increase visibility and demonstrate your value.</li><li>4- Expressing gratitude:</li><li>Show appreciation for your colleagues efforts. this can create a culture of recognition and shared value within the team.</li><li>By actively engaging and seeking recognition, you can enhance how valued you feel in your workplace.</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(7)">
+                    I would recommend Selling Partner Services (SPS) as a great place to work.	
+                </div>
+                <div class="explanation" id="explanation7">
+                    This question is intended to determine how likely you are to recommend Amazon as a good place to work.
+ -Positive feedback means that employees are generally satisfied, enjoying a positive workplace culture, and having a positive work experience.
+ -Negative feedback may reflect underlying concerns such as dissatisfaction with management, working conditions, or company structure. 
+Addressing these concerns can help improving the work environment and enhance the company's reputation.
+                </div>
+    
+                <div class="enhance-box" id="enhance7">
+                    <ul><li>To enhance your ability to recommend Selling Partner Services (SPS) as a great place to work:</li><li>1- Engage with Culture:</li><li>Actively participate in initiatives, events, and team activities to fully experience the workplace culture and make a positive contribution.</li><li>2- Build Strong Relationships:</li><li>Maintain relationships with your colleagues and managers, and create a supportive and collaborative work environment that you can confidently recommend.</li><li>3- Contribute to Success:</li><li>Take pride in your work and help drive Amazon's success by delivering quality results. This will help reinforce your positive view at work.</li><li>4- Give feedback:</li><li>Share your positive experiences with leadership and provide suggestions for improvement, and show that you care about making SPS a better place to work.</li><li>By immersing yourself in the culture and contributing to the team's success, you'll enhance your enthusiasm for recommending SPS as a great workplace.</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(8)">
+                    My manager provides coaching that helps me advance my skills
+                </div>
+                <div class="explanation" id="explanation8">
+                    This question examines the effectiveness of manager coaching sessions, needed trainings and connects in helping employees to develop and grow th skill.
+- Positive feedback indicates that employees feel supported in their career development and believe that their manager plays a significant role in their development.
+- Negative feedback may indicate the need for better training and development programs for managers to ensure that they can effectively train their team members and help them improve their skills.
+Addressing this question can help determine if managers are indeed contributing to the skill development of their teams. It also reflects the company’s commitment in creating a conducive environment to growth, which can lead to greater job satisfaction, productivity and employee retention.
+                </div>
+    
+                <div class="enhance-box" id="enhance8">
+                    <ul><li>To enhance the coaching you receive from your manager:</li><li>1- Be proactive:</li><li>Proactively seek out coaching opportunities by asking your manager for advice on specific skills or areas you want to develop.</li><li>2- Set clear development goals:</li><li>Work with your manager to set clear and measurable goals for your skill development. This will give your coaching sessions more direction and purpose.</li><li>3- Act on Feedback:</li><li>Implement the feedback and suggestions you receive into your daily work. Showing progress will encourage your managers to continue providing valuable coaching.</li><li>4- Request regular check-ins:</li><li>Schedule regular connects with your manager to discuss progress, address challenges,  and receive continuous training</li><li>5- Share your success:</li><li>Let your manager know when their coaching helped you achieve a specific goal or develop a skill. This will strengthen the effectiveness of their support and motivates further coaching.</li><li>By being proactive and engaged in the coaching process, you can enhance the support you receive and accelerate your skill development.</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(9)">
+                    How clear are the expectations related to your performance?
+                </div>
+                <div class="explanation" id="explanation9">
+                    This question assesses how well employees understand the expectations regarding their performance.
+- Positive feedback indicate that employees have a clear understanding of what is required from them, which helps them align their efforts with organizational goals, perform effectively and feel confident in their roles.
+ - Negative feedback suggest that expectations may be vague or poorly communicated, leading to confusion, misaligned efforts, and potential frustration.
+Addressing this question can improve communication, provide clearer guidelines, and ensure that employees know what is expected, leading to better performance and job satisfaction. 
+                </div>
+    
+                <div class="enhance-box" id="enhance9">
+                    <ul><li>To enhance the clarity of performance expectations:</li><li>1- Ask for clarification:</li><li>If your performance expectations are unclear in any way, Ask your manager for specific details and examples to ensure you fully understand what is expected.</li><li>2- Ask for regular feedback:</li><li>Schedule regular connects with your manager to discuss performance, progress towards achieving goals and necessary adjustments if needed.</li><li>3- Document expectations:</li><li>Take notes during performance reviews or meetings where expectations are discussed. Share these notes with your manager to confirm you are up to your responsibilities.</li><li>3- Align on Priorities:  Review your tasks and goals with your manager regularly to ensure they match the team and organization's priorities.</li><li>By taking these steps, you can enhance your understanding and alignment with performance expectations.</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(10)">
+                    What would most help you understand how your performance is evaluated?	
+                </div>
+                <div class="explanation" id="explanation10">
+                    Do you understand what is expected from you in terms of your performance?
+Are you aligned with your organizational goals?
+Are you fully aware of your evaluation process?
+This question aims to assess how well employees understand their roles, the expectations placed on them, and the alignment of their work with broader organizational goals. It also evaluates their awareness of the evaluation process.
+- Positive feedback indicate that there is an effective communication and a clear guidance from management, which in turn fosters higher productivity and job satisfaction.
+- Negative feedback suggest that there may be a need for better clarity and communication around performance standards and expectations. Improving this can lead to enhanced overall performance and boost employee confidence.
+By addressing these concerns, organizations can ensure that performance standards are clearly defined and effectively communicated, which helps create a more focused, motivated, and effective workforce.
+                </div>
+    
+                <div class="enhance-box" id="enhance10">
+                    <ul><li>To enhance your understanding of how your performance is evaluated:</li><li>1- Ask for detailed criteria:</li><li>Ask your manager for a clear breakdown of the performance metrics and the criteria used to evaluate your work. Understanding the specific parameters will help you align your efforts with expectations.</li><li>2- Clarify goals and objectives:</li><li>Make sure you have a clear understanding of your short-term and long-term goals. Review these regularly with your manager to see how they relate to your performance reviews.</li><li>3- Ask for examples:</li><li>Ask for examples of what contributes to high performance versus areas that need improvement. Concrete examples help you better understand how to meet or exceed expectations.</li><li>4- Ask for regular feedback:</li><li>Have regular feedback sessions with your manager to discuss progress and areas of improvement. This will help you stay on track and understand how your performance will be evaluated over time.</li><li>5- Document and reflect:</li><li>Keep a record of the feedback and evaluations you receive, and use it to reflect your performance. This will help you identify patterns and areas where you can improve.</li><li>When following these steps, you can gain a clearer understanding of how your performance is evaluated and what you need to do to succeed.</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(11)">
+                    How is the team you're on at sharing knowledge with each other?
+                </div>
+                <div class="explanation" id="explanation11">
+                    This question examines how effectively team members share knowledge and information with each other. "Effective knowledge sharing is important for cooperation, learning, and overall team performance."
+- Positive feedback  refers to a culture of open communication and mutual support, where team members freely exchange insights and knowledge. 
+- Negative feedback may reflect barriers to communication, such as siloed business practices or lack of collaborative tools, which prevent the team from sharing their collective knowledge.
+By addressing these issues, organizations can work to create a more collaborative and knowledgeable team environment, ultimately enhancing effective problem solving and innovation.
+                </div>
+    
+                <div class="enhance-box" id="enhance11">
+                    <ul><li>To enhance knowledge sharing within your team:</li><li>1- Encourage open communication:</li><li>Promote an environment where team members feel comfortable sharing information, ideas, and best practices. You can start this by openly sharing your knowledge and experiences.</li><li>2- Create a knowledge repository:</li><li>Suggest setting up shared documents, wiki, or database. Where team members can easily access and contribute valuable information, resources, and insights.</li><li>3- Organize knowledge sharing sessions:</li><li>Offer regular meetings or informal gatherings where team members can discuss recent learnings, challenges, or new strategies.</li><li>4- Mentorship and Pairing:</li><li>Advocate for or participate in mentorship or peer-pairing programs where more experienced team members can guide others, facilitating knowledge transfer.</li><li>By promoting and participating in these practices. You will be able to increase the culture of knowledge sharing within your team.</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(12)">
+                    I am making progress toward my career goals in my current role. 
+                </div>
+                <div class="explanation" id="explanation12">
+                    Do you participate in on-site training, classes, online workshops/training such as using K-Net resources? 
+This question examines whether employees think their current role helps them make progress toward their career goals.
+Making progress towards your career goals means you are progressing to the role you have applied for to ensure you continue to learn and develop, and this means that the employees are responsible for their career development with the help of their managers by learning and improving knowledge relevant to their roles. This includes data management, communication skills, reporting, tool management and soft skills.
+
+
+- Positive feedback means that employees see opportunities for growth and development in their current positions, leading to greater job satisfaction and retention. 
+- Negative feedback  means that there might be a lack of development opportunities, support, or alignment of the role with employee career aspirations. 
+Addressing this can help provide employees with the resources, support and opportunities they need to advance their careers, to the benefit of both employees and the organization.
+                </div>
+    
+                <div class="enhance-box" id="enhance12">
+                    <ul><li>To enhance your progress toward career goals in your current role:</li><li>1- Set specific milestones:</li><li>Break down your long-term career goals into smaller and achievable milestones that you can follow. This will help you stay focused and enjoy your progress along the way.</li><li>2- Review goals regularly:</li><li>Schedule periodic check-ins with your manager to review your career goals. Discuss your progress and adjust your plan as needed. This keeps your goals aligned with your current role and organizational objectives.</li><li>3- Look for opportunities to develop your skills:</li><li>Identify and pursue trainings, projects, or assignments that align with your career aspirations. This may involve taking on new responsibilities, attending workshops or learning new tools related to your goals</li><li>4- Networking within your organization:</li><li>Build relationships with colleagues in different departments or roles you're interested in. Networking can open the doosr to new opportunities and provide insight into various career paths.</li><li>5- Ask for feedbacks and mentorships:</li><li>Seek for feedback on your work and ask for mentorship from leaders or peers who have achieved similar goals. Their guidance can help you navigate challenges and stay on course.</li><li>By following these steps, you will be more proactive in  advancing your career goals within your current role.</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(13)">
+                     My team makes bold commitments to solve problems. 
+                </div>
+                <div class="explanation" id="explanation13">
+                    Are you willing to take ownership of your actions and solutions and take risks of making decisions to solve problems?
+Are you able think creatively and to propose new solutions?
+This question assesses whether the team is willing to take decisive and ambitious actions to address challenges.
+- Positive feedback indicate that the team is confident, proactive, and committed to make significant efforts to solve problems, which lead to an impactful and effective solutions.
+- Negative feedback can suggest a more hesitant approach, which can lead to a missed opportunities for improvement and innovation.
+Addressing this can help to create a culture of bold decision-making, where employees are empowered to take on challenges with determination and a willingness to commit to meaningful solutions.
+                </div>
+    
+                <div class="enhance-box" id="enhance13">
+                    <ul><li>To enhance your team’s ability to make bold commitments to solve problems:</li><li>1- Encourage Risk-Taking:</li><li>Foster an environment where team members feel safe taking calculated risks. Support bold ideas by showing enthusiasm and backing innovative approaches, even if they involve some uncertainty.</li><li>2- Contribute Creative Ideas:</li><li>Actively participate in brainstorming sessions and offer creative solutions to challenges. Don’t be afraid to suggest unconventional approaches that could lead to breakthrough results.</li><li>3- Collaborate on Execution Plans:</li><li>Work closely with your team to create detailed and actionable plans for executing bold commitments. Ensure that everyone understands their roles and the resources needed to achieve the goals.</li><li>4- Monitor Progress and Adapt:</li><li>Once a bold commitment is made, keep track of progress and be ready to adapt if necessary. Offer suggestions for adjustments to stay on course or overcome unforeseen obstacles.</li><li>5- Celebrate Bold Successes:</li><li>When bold commitments lead to successful outcomes, celebrate these achievements with your team. Recognizing the impact of taking bold actions can motivate continued innovation.</li><li>By actively participating in and supporting these practices, you can help your team become more confident and effective in making and fulfilling bold commitments to solve problems.</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(14)">
+                    My manager effectively drives completion of the right goals.
+                </div>
+                <div class="explanation" id="explanation14">
+                    This question assesses whether the manager is effective in setting, prioritizing and ensuring completion of important goals.
+- Positive feedback indicate that the manager has a strong leadership and organizational skills, aligning team efforts with strategic goals and driving performance. 
+- Negative feedback can indicate issues in goal setting, prioritization, or tracking information, which can lead to inconsistencies in effort and performance. 
+Addressing this can help improving goal management and ensuring that the team is focused on achieving the right goals, increasing overall performance and success.
+                </div>
+    
+                <div class="enhance-box" id="enhance14">
+                    <ul><li>To enhance your manager's effectiveness in driving the completion of the right goals:</li><li>1- Align your work with key goals:</li><li>Make sure your tasks and projects are directly aligned with your team's goals. Check in regularly with your manager to confirm priorities and adjust your focus as needed.</li><li>2- Provide timely updates:</li><li>Keep your manager informed of progress on your important tasks. This allows them to track if their goals are being achieved and make necessary adjustments.</li><li>3- Identify and address obstacles:</li><li>Identify any barriers that may hinder the achievement of your goals and bring them tp your manager's attention, and propose potential solutions to help the team move forward.</li><li>4- Collaborate and support:</li><li>Work closely with your teammates to make sure that everyone is aligned and contributing towards the same goal, and provide support to colleagues who may need help achieving their objectives.</li><li>5- Suggest Improvements:</li><li>If you see areas where your goal setting or tracking process could be improved and suggest these changes to your manager. Your insights can help in improving the approach to acheive the right goals more effectively.</li><li>By following these steps, you can contribute to the successful completion of important goals and support your manager in driving the team's success..</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(15)">
+                    
+My team optimizes resources to accomplish more. 
+                </div>
+                <div class="explanation" id="explanation15">
+                    Is your team optimizing their time and resources, to get more done, complete tasks faster, and improve overall productivity?
+This means that your team ensures that each resaurce is properly used to contribute to the teams goals.
+This question examines whether the team effectively uses available resources to increase performance and to achieve goals. 
+- Positive feedback means that the team is managing and allocating resources, time and tools to accomplish more with what they have.
+-Negative feedback can mean inefficient use of resources, leading to wasted potential  and lower productivity.
+ Addressing this can help to improve the team’s use of resources and increase overall productivity and effort in achieving goals.
+                </div>
+    
+                <div class="enhance-box" id="enhance15">
+                    <ul><li>To enhance your team's ability to optimize resources and accomplish more:</li><li>1- Identify resource gaps:</li><li>Evaluate the resources your team uses regularly, including tools, time, and skills.</li><li>Identify gaps or inefficiencies and bring them to your manager's attention with suggestions for improvement.</li><li>2- Share best practices:</li><li>If you discover ways to use resources more efficiently, share them with your team. This may include tips for using tools more effectively, streamlining workflows, or saving time on routine tasks.</li><li>3- Promote collaboration:</li><li>Encourage collaboration among team members to make the best use of each person’s strengths and knowledge. This can lead to more efficient use of resources by leveraging the right expertise for each task.</li><li>4- Monitor resource usage:</li><li>Keep an eye on how resources are being used and suggest adjustments if you notice waste or inefficiency. For example, propose reallocating tasks to balance workloads or using tools that automate repetitive tasks.</li><li>5- Encourage continuous improvement:</li><li>Suggest regular team reviews of resource usage to find new ways to optimize. This can be part of a broader continuous improvement initiative, ensuring that the team is always finding ways to accomplish more with less.</li><li>By actively participating in and suggesting improvements to how resources are used, you can help your team become even more efficient and productive.</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(16)">
+                    My team has mechanisms that allow us to quickly adapt to changes in our work.
+                </div>
+                <div class="explanation" id="explanation16">
+                    This question asks whether the team has processes or strategies in place to respond quickly and effectively to changes in the workplace.
+-Positive feedback means that the team is dynamic and adaptable, adapting and changing its response in actions to new information, challenges, or opportunities.
+- Negative feedback may indicate lack of adaptive strategies, which may lead to delays or inefficiencies in the face of change. 
+Addressing this can help ensure the team is prepared to handle change, increasing overall flexibility and performance.
+                </div>
+    
+                <div class="enhance-box" id="enhance16">
+                    <ul><li>To enhance your team’s ability to quickly adapt to changes :</li><li>1- Embrace flexibility:</li><li>Be open to shifting priorities and adapt to new methods, and express your willingness to take on new task or adjust your approach as needed.</li><li>2- Communicate effectively:</li><li>Create open communication channels with your team to share updates or concerns quickly, and use available tools like Emails or Chime to keep updated of changes and and contribute to discussions about adapting to them.</li><li>3- Document and share best practices:</li><li>When your team develops effective strategies for adapting to change, document them and share with colleagues. This helps everyone stay aligned and improves the team’s overall adaptability.</li><li>4- Seek Training and Development:</li><li>Actively seek for trainings or development opportunities to enhance your skills in areas related to managing change. This might include workshops on change management or skills that help you adjust quickly to new technologies or processes.</li><li>5- Provide feedback:</li><li>Provide feedback on how the team's mechanisms are working to adapt changes. If you see areas that need improvement Instead, suggest practical solutions that could make the process smoother.</li><li>5- Be proactive:</li><li>Anticipate potential changes and prepare in advance. For example, if you know a project might shift direction, start thinking about how to pivot your work accordingly.</li><li>By actively participating in and supporting the team’s mechanisms for adaptation, you can contribute to a more agile and responsive work environment.</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(17)">
+                    The team I'm on uses mechanisms to solve recurring problems.
+                </div>
+                <div class="explanation" id="explanation17">
+                    This question examines whether the team is effectively using established methods to address and resolve recurring problems.
+-Positive feedback  means that the team has mechanisms in place, such as standard procedures, continuous improvement, or problem-solving processes, to deal with issues systematically and prevented from recurring.
+- Negative feedback suggest a lack of structured approaches or follow-up, which can leadi to ongoing problems and inefficiencies. 
+Addressing this can help ensure recurring issues are proactively managed, leading to effective and sustainable solutions.
+                </div>
+    
+                <div class="enhance-box" id="enhance17">
+                    <ul><li>To enhance your team’s use of mechanisms for solving recurring problems :</li><li>1- Document Problems and Solutions:</li><li>Keep a detailed record of recurring problems and the solutions that have been effective. Share this documentation with your team to build a knowledge base for future reference.</li><li>2- Analyze Patterns:</li><li>Look for patterns or common factors in recurring problems, and share your observations with the team to help identify root causes and develop more targeted solutions.</li><li>3- Suggest improvement:</li><li>Propose enhancements to existing problem-solving mechanisms. For example, if a tool or process isn’t as effective as it could be, suggest alternative solutions or improvements.</li><li>4- Facilitate knowledge sharing:</li><li>Encourage team members to share experiences and solutions related to recurring issues, and arrange regular meetings or create a shared platform where solutions can be discussed and improved.</li><li>5- Implement best practices:</li><li>Adopt and apply best practices for problem solving from other teams, and share these practices with your team to increase efficiency.</li><li>6- Track effectiveness:</li><li>Track the results of implemented solutions to ensure they effectively resolve issues. If the solution doesn't work as expected provide feedback and suggest adjustments.</li><li>By engaging in these practices, you can help improve how your team addresses and resolves recurring problems, leading to more efficient and effective solutions.</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(18)">
+                    My teammates and I support each other when dealing with problems at work.
+                </div>
+                <div class="explanation" id="explanation18">
+                    This question examines how team members help each other when facing challenges at work. 
+- Positive feedback refers to a collaborative and supportive team environment in which members help each other solve problems, which can enhance problem solving and team cohesion.
+- Negative feedback can mean a lack of support, which can lead to increased stress,and an inability to process information 
+Addressing this can help foster a more collaborative and supportive team culture, improving overall team dynamics and performance."
+                </div>
+    
+                <div class="enhance-box" id="enhance18">
+                    <ul><li>To enhance the support you and your teammates provide each other when dealing with problems at work:</li><li>1- Promote open communication:</li><li>Encourage a culture where team members feel comfortable discussing issues and asking for help. Actively listen and offer constructive feedback when colleagues share their issues.</li><li>2- Offer help:</li><li>Don't wait for someone to ask for help. Look for opportunities where you can provide support, whether it’s by sharing expertise, providing resources, or helping with tasks.</li><li>3- Share knowledge and resources:</li><li>When you solve a problem or discover a helpful resource, Share it with your team. This will help in building a collective knowledge base and can assist others facing similar issues.</li><li>4- Collaborate on problem solving:</li><li>Work together to identify and develop solutions. Collaborative problem solving can lead to more effective and innovative solutions.</li><li>5- Recognize and appreciate effort:</li><li>Acknowledge the efforts of your teammates when they help you or others. Positive reinforcement can foster a culture of support within a team.</li><li>6- Create a supportive environment:</li><li>Encourage or participate in team building activities and trainings that focus on developing teamwork and problem solving skills.</li><li>7- Encourage knowledge sharing:</li><li>Hold regular team meetings or check-ins. where team members can discuss ongoing challenges and share solutions, so that everyone keeps updated and ready to support each other.</li><li>By participating in and promoting these practices, you will be able to increase your support network within your team. making it easier to tackle problems collaboratively and effectively.</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(19)">
+                    My manager is an effective Amazon writer
+                </div>
+                <div class="explanation" id="explanation19">
+                    This question looks at whether employees perceive their manager as effective Amazon writer.
+Effective writing is critical for clear, actionable communication, including emails, reports, and planning documents.
+-Positive feedback  means that the manager communicates effectively through writing, provides clear instructions and decision-making. 
+-Negative feedback refer to potential issues in written communication, such as unclear or poorly structured documents, which may affect understanding and efficiency. 
+Addressing this can help improve overall communication and ensure that the written material best support the team's goals and operations.
+                </div>
+    
+                <div class="enhance-box" id="enhance19">
+                    <ul><li>To enhance your manager's effectiveness as an Amazon writer, you can:</li><li>1- Provide constructive feedback:</li><li>If you notice areas where your manager’s writing could be improved, provide thoughtful and constructive feedback, either directly or through a formal feedback mechanism. This could help refine their writing skills and enhance clarity.</li><li>2- Share best practices:</li><li>Share any writing best practices or resources you’ve found helpful. This could include templates, guides, or examples of effective writing, which can support your manager’s ongoing development.</li><li>3- Collaborate on writing projects:</li><li>Engage with your manager in collaborative writing projects. Offer to help draft, edit, or review documents, which can provide additional perspectives and improve the overall quality of the writing.</li><li>4- Encourage training opportunities:</li><li>Suggest training or workshops focused on writing skills. Even experienced writers can benefit from advanced training or new techniques.</li><li>5- Promote a feedback culture:</li><li>Encourage a culture where feedback on writing is welcomed and valued. This can include setting up peer review sessions or writing workshops within your team.</li><li>By taking these steps, you can contribute to enhancing your manager’s effectiveness as an Amazon writer, fostering a more productive and skilled writing environment.</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(20)">
+                     How clear is the vision for the team you're on?
+                </div>
+                <div class="explanation" id="explanation20">
+                    This question examines how well the team vision is communicated and defined.
+ A clear vision provides direction, aligns team efforts, and motivates members by connecting their work to broader goals. 
+- Positive feedback means that the vision is being communicated effectively, which helps team members understand their roles and how they contribute to the overall goals. 
+- Negative feedback refers to whether the vision is clear or communicated effectively, leading to less confusion, misalignment, and motivation. 
+Addressing this can help ensure team members are aligned and focused on achieving shared goals.
+                </div>
+    
+                <div class="enhance-box" id="enhance20">
+                    <ul><li>To enhance the clarity of your team's vision:</li><li>1- Seek for clarity from leaders:</li><li>If the team's vision isn't clear, Ask your manager for clarification, understand your long-term goals and how your work contributes to them. Sharing this understanding with colleagues can help ensure that everyone is on the same page.</li><li>2-Communicate the vision regularly:</li><li>Encourage regular discussions about the team’s vision in connects, bring up the vision in context with current projects or challenges to ensure it remains a focal point for decision-making.</li><li>3- Align your work with your vision:</li><li>Show how your work and projects align with your team's vision. When presenting work, explicitly connect it to the overarching goals, reinforcing the vision’s relevance in day-to-day activities.</li><li>4- Provide vision feedback:</li><li>If you notice gaps or inconsistencies in how the vision is communicated or understood, give feedback to your manager, and make suggestions to improve clarity or alignment.</li><li>5- Promote Inclusivity in Vision Discussions:</li><li>Foster an open environment where all team members feel comfortable participating in vision discussions. This creates a more understood vision that everyone feels connected to.</li><li>By actively engaging in these practices, you can help ensure that the team’s vision is clear, understood, and consistently applied in your work.</li></ul>
+                </div>
+        </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(21)">
+                     My manager includes me in decision-making for the team I'm on.
+                </div>
+                <div class="explanation" id="explanation21">
+                    This question assesses whether employees feel involved in the decision-making processes of their team.
+ Inclusion in decision-making can enhance employee engagement, foster a sense of ownership, and leverage diverse perspectives for better outcomes. 
+-Positive feedback means that managers value their team members and seek their input, which can increase collaboration. 
+- Negative feedback can indicate a top-down approach in which employees feel excluded, potentially leading to disengagement and missed opportunities to gain valuable insights.
+ Addressing this can help create an inclusive and engaging team culture, improving both team dynamics and good decision-making.
+                </div>
+    </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(22)">
+                     My team dives into the details to get to the root-cause of a problem
+                </div>
+                <div class="explanation" id="explanation22">
+                    This question asks whether the team is properly investigateing issues and identifying and addressing root causes. 
+Effective problem solving requires going beyond surface symptoms and understanding the causes of problems.
+- Positive feedback means that the team is active, analytical, and committed to sustainable solutions, which can drive continuous improvement and address recurring issues.
+- Negative feedback can indicate a tendency of using quick fixes or ignoring deeper issues, which can lead to ongoing problems and inefficiencies. 
+Addressing this can help develop a comprehensive and proactive approach to problem solving within the team.
+                </div>
+    </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(23)">
+                     I know where to find metrics/anecdotes to make smart decisions
+                </div>
+                <div class="explanation" id="explanation23">
+                    This question looks at whether employees know where to find the data and information they need to make informed decisions.
+ Having an access to metrics and anecdotes is critical  for data-driven decision-making, improving efficiency, and achieving organizational goals.
+- Positive feedback means that employees have the resources and skills to obtain the information they need, which is used to make better decisions and performance.
+- Negative feedback indicates a need for data improvement, better communication of available resources, or training on how to properly use these tools. 
+Addressing this can enhance both organizational decision-making capabilities  and operational success.
+                </div>
+    </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(24)">
+                    I understand my organization's long term strategy.
+                </div>
+                <div class="explanation" id="explanation24">
+                    This question assesses whether employees have a clear understanding of the organization's long-term strategy. 
+Understanding the long-term strategy is important for aligning individual and team efforts with organizational goals.
+- Positive feedback refers to an effective communication from the management about the organization's vision and strategic direction, which can increase employee engagement and alignment.
+- Negative feedback means that there is a need for a better and clearer communication regarding the organization's future plans.
+ Addressing this can help ensure that all employees are informed and motivated to contribute to the long-term success of the organization.
+                </div>
+    </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(25)">
+                    My job is a good fit for my skills.
+                </div>
+                <div class="explanation" id="explanation25">
+                    This question aims to determine if employees feel that their job aligns well with their skills and abilities. When employees believe their job is a good fit for their skills, they are likely to be more engaged, productive, and satisfied with their work. 
+-Positive feedback indicates that the organization successfully matches roles with employee competencies, resulting in better performance and job satisfaction.
+- Negative feedback indicates that there may be a mismatch between job demands and employee skills, which can lead to frustration, decreased productivity, and increased employee turnover.
+Addressing this can help ensure employees are in roles that utilize their strengths, increasing individual and organizational success.
+                </div>
+    </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(26)">
+                    I am respected for my unique background and experiences.
+                </div>
+                <div class="explanation" id="explanation26">
+                    This question assesses whether employees feel valued and respected for the diversity they bring to the workplace, including their background, experiences and perspectives.
+- Positive feedback indicate an inclusive work environment where differences are appreciated and contribute to a richer, more collaborative culture.
+- Negative feedback may suggest that organization or team lacks inclusivity, leading to feelings of undervaluation and disengagement.
+Addressing this can help create a more inclusive culture, where all employees feel respected and valued for their individuality, which in turn fosters a more supportive and innovative work environment.
+                </div>
+    </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(27)">
+                    I am empowered to maintain harmony between my work and personal commitments.
+                </div>
+                <div class="explanation" id="explanation27">
+                    This question evaluates whether employees feel they have the autonomy and support to balance their work responsibilities with personal life commitments.
+- Positive feedback indicate that the organization provides flexibility, resources, and a supportive culture that allows employees to manage their work-life balance effectively, leading to greater job satisfaction.
+- Negative feedback may suggest that employees feel overburdened or lack the necessary flexibility, potentially leading to stress and burnout. 
+Addressing this can help create a more supportive work environment where employees feel empowered to maintain harmony between their professional and personal lives, enhancing both productivity and morale.
+                </div>
+    </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(28)">
+                    I am able to innovate in my role.
+                </div>
+                <div class="explanation" id="explanation28">
+                    This question asks whether employees feel there are opportunities and support to bring new ideas and strategies into their roles. 
+-Positive feedback means a work environment that encourages creativity, experimentation, and continuous improvement, which can increase innovation and job satisfaction. 
+-Negative feedback can refer to barriers to innovation, such as strict processes, lack of resources, or a culture that does not support innovative ideas. 
+Addressing this can help to create a more innovative culture, where employees feel empowered to explore new ideas and contribute to organizational growth and success.
+
+                </div>
+    </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(29)">
+                    I have access to the data I need to do my job.
+                </div>
+                <div class="explanation" id="explanation29">
+                    This question assesses whether employees feel they have the necessary data and recourses to perform their job effectively..
+-Positive feedback indicate that employees have easy access to the relevant information they need, which supports information informed decision-making, productivity, and overall job performance.
+                </div>
+    </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(30)">
+                    The team I'm on reviews the right success metrics.
+                </div>
+                <div class="explanation" id="explanation30">
+                    nan
+                </div>
+    </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(31)">
+                    I am able to innovate in my role.	"Day 1 Culture, Manager Skills"	Innovation
+                </div>
+                <div class="explanation" id="explanation31">
+                    nan
+                </div>
+    </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(32)">
+                    My team has efficient approvals processes for our work.	Day 1 Culture	Approvals
+                </div>
+                <div class="explanation" id="explanation32">
+                    nan
+                </div>
+    </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(33)">
+                    "Overall, how satisfied are you with your job right now?"
+                </div>
+                <div class="explanation" id="explanation33">
+                    nan
+                </div>
+    </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(34)">
+                    My manager helps me feel included at work.	"Team Effectiveness, Manager Skills, Inclusion (Leaders)"	Inclusion
+                </div>
+                <div class="explanation" id="explanation34">
+                    nan
+                </div>
+    </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(35)">
+                    What would most help you feel more valued at work?	"Team Effectiveness, Manager Skills, Inclusion (Leaders)"	Inclusion
+                </div>
+                <div class="explanation" id="explanation35">
+                    nan
+                </div>
+    </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(36)">
+                    I feel connected to my teammates.	"Team Effectiveness, Manager Skills, Inclusion (Leaders)"	Inclusion
+                </div>
+                <div class="explanation" id="explanation36">
+                    nan
+                </div>
+    </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(37)">
+                    What would help make you feel more connected to the people you work with?	"Team Effectiveness, Manager Skills, Inclusion (Leaders)"	Inclusion
+                </div>
+                <div class="explanation" id="explanation37">
+                    nan
+                </div>
+    </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(38)">
+                    How can your team better support you to express yourself?	"Team Effectiveness, Manager Skills, Inclusion (Leaders)"	Inclusion
+                </div>
+                <div class="explanation" id="explanation38">
+                    nan
+                </div>
+    </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(39)">
+                    My team creates a comfortable environment to express my authentic self.	"Team Effectiveness, Manager Skills, Inclusion (Leaders)"	Inclusion
+                </div>
+                <div class="explanation" id="explanation39">
+                    nan
+                </div>
+    </div>
+            <div class="faq-card">
+                <div class="question" onclick="toggleAnswer(40)">
+                    I am respected for my unique background and experiences.	"Team Effectiveness, Manager Skills, Inclusion (Leaders)"	Inclusion
+                </div>
+                <div class="explanation" id="explanation40">
+                    nan
+                </div>
+    </div>
+        </div>
+    </div>
+    <script>
+        function toggleAnswer(index) {
+            const explanation = document.getElementById(`explanation${index}`);
+            const enhance = document.getElementById(`enhance${index}`);
+
+            if (explanation) explanation.classList.toggle('show');
+            if (enhance) enhance.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
