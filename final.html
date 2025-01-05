@@ -103,6 +103,8 @@
 </head>
 <body>
     <div class="container">
+    <input type="text" id="searchInput" onkeyup="filterFAQs()" placeholder="Search FAQs..." style="width: 100%; padding: 10px; margin-bottom: 20px; font-size: 1rem; border-radius: 5px; border: 1px solid #ddd;">
+    
         <h1>Connections Manual <sub>Batool Samhan</sub></h1>
         <div class="faq-list">
             
@@ -769,5 +771,21 @@ Addressing this can foster an environment where constructive critique is encoura
             if (enhance) enhance.classList.toggle('show');
         }
     </script>
-</body>
+
+    <script>
+        function filterFAQs() {
+            let input = document.getElementById('searchInput');
+            let filter = input.value.toUpperCase();
+            let faqs = document.getElementsByClassName('faq-card');
+            for (let i = 0; i < faqs.length; i++) {
+                let text = faqs[i].textContent || faqs[i].innerText;
+                if (text.toUpperCase().indexOf(filter) > -1) {
+                    faqs[i].style.display = "";
+                } else {
+                    faqs[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    </body>
 </html>
